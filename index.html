@@ -112,7 +112,88 @@
     <h2>GẤU MODZ</h2>
     <p>SHARE MOD SKIN FREE FIRE</p>
   </div>
+<div class="search-box">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="searchInput"
+           placeholder="Tìm kiếm MOD..."
+           onkeyup="searchMods()">
+</div>
 
+<style>
+.search-box{
+    position:relative;
+    width:100%;
+    max-width:420px;
+    margin:25px auto;
+}
+
+.search-box input{
+    width:100%;
+    height:56px;
+    padding:0 20px 0 55px;
+    background:#0d1117;
+    color:#fff;
+    font-size:17px;
+    border:2px solid #00e5ff;
+    border-radius:40px;
+    outline:none;
+    box-sizing:border-box;
+
+    box-shadow:
+        0 0 8px #00e5ff,
+        0 0 18px #00e5ff,
+        inset 0 0 8px rgba(0,229,255,.25);
+
+    transition:.3s;
+}
+
+.search-box input::placeholder{
+    color:#9adfff;
+}
+
+.search-box input:focus{
+    border-color:#00ffff;
+    box-shadow:
+        0 0 10px #00ffff,
+        0 0 25px #00ffff,
+        0 0 45px #00e5ff,
+        inset 0 0 10px rgba(0,255,255,.3);
+}
+
+.search-icon{
+    position:absolute;
+    left:18px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#00ffff;
+    font-size:22px;
+    text-shadow:
+        0 0 8px #00ffff,
+        0 0 18px #00ffff;
+}
+</style>
+
+<script>
+function searchMods(){
+
+    let keyword=document.getElementById("searchInput").value.toLowerCase();
+
+    let cards=document.querySelectorAll(".card");
+
+    cards.forEach(function(card){
+
+        let text=card.innerText.toLowerCase();
+
+        if(text.includes(keyword)){
+            card.style.display="";
+        }else{
+            card.style.display="none";
+        }
+
+    });
+
+}
+</script>
   <div class="grid">
 
     <div class="card" onclick="openBox('https://link4m.org/B3RAag','https://link4m.net/T31K3')">
