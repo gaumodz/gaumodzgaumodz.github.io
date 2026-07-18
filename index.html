@@ -388,5 +388,77 @@ function createPetal(){
 
 setInterval(createPetal,180);
 </script>
+  <style>
+.sakura{
+    position:fixed;
+    left:0;
+    top:0;
+    pointer-events:none;
+    z-index:99999;
+    animation:petal 1.8s ease-out forwards;
+}
+
+.sakura::before{
+    content:"❄️";
+    font-size:var(--size);
+    display:block;
+}
+
+@keyframes petal{
+
+0%{
+    transform:translate(-50%,-50%) scale(.2) rotate(0deg);
+    opacity:1;
+}
+
+100%{
+    transform:
+        translate(
+            calc(-50% + var(--x)),
+            calc(-50% + var(--y))
+        )
+        rotate(720deg)
+        scale(1);
+    opacity:0;
+}
+
+}
+</style>
+
+<script>
+document.addEventListener("pointerdown",function(e){
+
+    const petals = 60;
+    const radius = 50;
+
+    for(let i=0;i<petals;i++){
+
+        const flower = document.createElement("div");
+        flower.className = "sakura";
+
+        flower.style.left = e.clientX + "px";
+        flower.style.top = e.clientY + "px";
+
+        const angle = (Math.PI * 2 / petals) * i;
+
+        const random = Math.random() * 40;
+
+        const x = Math.cos(angle) * (radius + random);
+        const y = Math.sin(angle) * (radius + random);
+
+        flower.style.setProperty("--x",x + "px");
+        flower.style.setProperty("--y",y + "px");
+        flower.style.setProperty("--size",(10 + Math.random()*8) + "px");
+
+        document.body.appendChild(flower);
+
+        setTimeout(()=>{
+            flower.remove();
+        },1800);
+
+    }
+
+});
+</script>
 </body>
         </html>
