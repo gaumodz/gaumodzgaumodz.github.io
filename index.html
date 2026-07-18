@@ -1,83 +1,160 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GẤU MODZ</title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>GẤU MODZ</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+  <style>
+    body{
+      margin:0;
+      background:#111317;
+      color:#fff;
+      font-family:Arial;
+    }
 
-body{
-    background:#111;
-    color:#fff;
-    text-align:center;
-}
+    .wrap{
+      max-width:430px;
+      margin:auto;
+      padding:20px;
+    }
 
-.avatar{
-    width:170px;
-    height:170px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid orange;
-    box-shadow:0 0 35px orange;
-    margin-top:35px;
-}
+    .head{
+      text-align:center;
+    }
 
-h1{
-    margin-top:20px;
-    font-size:42px;
-}
+    .avatar{
+      width:110px;
+      height:110px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid #00d5ff;
+    }
 
-p{
-    color:#aaa;
-    margin-bottom:30px;
-}
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      margin:20px 0;
+    }
 
-.card{
-    width:320px;
-    margin:20px auto;
-    background:#1c1c1c;
-    border-radius:20px;
-    overflow:hidden;
-    text-decoration:none;
-    color:#fff;
-    transition:.3s;
-}
+    .card{
+      background:#20242b;
+      padding:10px;
+      border-radius:14px;
+      text-align:center;
+      cursor:pointer;
+    }
 
-.card:hover{
-    transform:scale(1.03);
-}
+    .card img{
+      width:100%;
+      aspect-ratio:16/9;
+      object-fit:cover;
+      border-radius:10px;
+    }
 
-.card img{
-    width:100%;
-    display:block;
-}
+    .contact a,
+    .btn{
+      display:block;
+      background:#20242b;
+      color:#fff;
+      text-decoration:none;
+      padding:12px;
+      border-radius:10px;
+      margin:8px 0;
+      text-align:center;
+    }
 
-.card h2{
-    padding:18px;
-    font-size:24px;
-}
-</style>
+    #pop{
+      display:none;
+      position:fixed;
+      inset:0;
+      background:#0008;
+      align-items:center;
+      justify-content:center;
+    }
 
+    .box{
+      background:#1b1f26;
+      padding:20px;
+      border-radius:16px;
+      width:85%;
+      max-width:320px;
+    }
+  </style>
 </head>
+
 <body>
 
-<img class="avatar" src="https://sf-static.upanhlaylink.com/img/image_20260718a071d084067cedfc4a1596a3182dc950.jpg">
+<div class="wrap">
 
-<h1>GẤU MODZ</h1>
+  <div class="head">
+    <img class="avatar" src="https://sf-static.upanhlaylink.com/img/image_20260718a071d084067cedfc4a1596a3182dc950.jpg">
+    <h2>GẤU MODZ</h2>
+    <p>SHARE MOD SKIN FREE FIRE</p>
+  </div>
 
-<p>MOD SKIN FREE FIRE</p>
+  <div class="grid">
 
-<a class="card" href="https://linkcuaban.com">
-<img src="https://sf-static.upanhlaylink.com/img/image_20260718a071d084067cedfc4a1596a3182dc950.jpg">
-<h2>NHẤN ĐỂ TẢI MOD</h2>
-</a>
+    <div class="card" onclick="openBox('LINK_THUONG','LINK_MAX')">
+      <img src="https://sf-static.upanhlaylink.com/img/image_2026071807921386c468f691b753e4ee3defa006.jpg">
+      <h3>MOD SKIN 1</h3>
+      <p>NHÂN VẬT IGNIS</p>
+    </div>
+
+    <div class="card" onclick="openBox('https://link4m.org/B3RAag','https://link4m.net/T31K3')">
+      <img src="https://via.placeholder.com/300x170">
+      <h3>MOD 2</h3>
+      <p>Mô tả</p>
+    </div>
+
+    <div class="card" onclick="openBox('LINK_THUONG','LINK_MAX')">
+      <img src="https://via.placeholder.com/300x170">
+      <h3>MOD 3</h3>
+      <p>Mô tả</p>
+    </div>
+
+    <div class="card" onclick="openBox('LINK_THUONG','LINK_MAX')">
+      <img src="https://via.placeholder.com/300x170">
+      <h3>MOD 4</h3>
+      <p>Mô tả</p>
+    </div>
+
+  </div>
+
+  <div class="contact">
+    <h3>Thông tin liên hệ</h3>
+
+    <a href="#">Hướng dẫn</a>
+    <a href="#">YouTube</a>
+    <a href="#">TikTok</a>
+    <a href="#">Telegram</a>
+    <a href="#">Zalo</a>
+  </div>
+
+</div>
+
+<div id="pop">
+  <div class="box">
+    <h3>Chọn phiên bản</h3>
+
+    <a class="btn" id="n">🟢 Free Fire Thường</a>
+    <a class="btn" id="m">🔴 Free Fire MAX</a>
+    <a class="btn" href="javascript:closeBox()">❌ Đóng</a>
+  </div>
+</div>
+
+<script>
+function openBox(a,b){
+  document.getElementById('pop').style.display='flex';
+  document.getElementById('n').href = a;
+  document.getElementById('m').href = b;
+}
+
+function closeBox(){
+  document.getElementById('pop').style.display='none';
+}
+</script>
 
 </body>
-</html>
+        </html>
