@@ -787,5 +787,31 @@ document.addEventListener("pointerdown",function(e){
 
 });
 </script>
+  <script>
+function filterMods(keyword){
+
+    let cards = document.querySelectorAll(".card");
+    let tags = document.querySelectorAll(".tags span");
+
+    tags.forEach(tag => tag.classList.remove("active"));
+
+    event.target.classList.add("active");
+
+    cards.forEach(card=>{
+
+        let text = card.innerText.toUpperCase();
+
+        if(keyword==="TẤT CẢ"){
+            card.style.display="";
+        }else if(text.includes(keyword.toUpperCase())){
+            card.style.display="";
+        }else{
+            card.style.display="none";
+        }
+
+    });
+
+}
+  </script>
 </body>
         </html>
