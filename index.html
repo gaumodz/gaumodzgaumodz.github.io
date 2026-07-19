@@ -347,7 +347,7 @@ btn.onclick=function(){
     opacity:.9;
     pointer-events:none;
     z-index:9999;
-    animation:petalFall linear forwards;
+    animation:petal 4s ease-out forwards;
     box-shadow:0 0 6px rgba(255,182,193,.5);
 }
 
@@ -383,7 +383,7 @@ function createPetal(){
 
     setTimeout(()=>{
         petal.remove();
-    },12000);
+    },4000);
 }
 
 setInterval(createPetal,180);
