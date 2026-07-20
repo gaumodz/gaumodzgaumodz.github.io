@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <title>GẤU MODZ</title>
+  <title>Link Bio</title>
 
   <style>
     body{
@@ -19,35 +19,16 @@
       padding:20px;
     }
 
-.head{
-    position:relative;
-}
-
-.avatar{
-    position:relative;
-    width:110px;
-    height:110px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid #ff6a00;
-    z-index:2;
-}
-
     .head{
       text-align:center;
     }
 
     .avatar{
-    width:110px;
-    height:110px;
-    border-radius:50%;
-    object-fit:cover;
-
-    border:3px solid #ffffff;
-
-    box-shadow:
-        0 0 8px rgba(255,255,255,.9),
-        0 0 16px rgba(255,255,255,.5);
+      width:110px;
+      height:110px;
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid #00d5ff;
     }
 
     .grid{
@@ -81,7 +62,6 @@
       padding:12px;
       border-radius:10px;
       margin:8px 0;
-      text-align:center;
     }
 
     #pop{
@@ -100,115 +80,6 @@
       width:85%;
       max-width:320px;
     }
-    .tags{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:10px;
-    margin:15px 0 20px;
-}
-
-.tags span{
-    padding:10px 18px;
-    border-radius:30px;
-    background:rgba(0,229,255,.08);
-    border:2px solid #00e5ff;
-    color:#fff;
-    font-size:14px;
-    font-weight:700;
-    cursor:pointer;
-    transition:.3s;
-    user-select:none;
-
-    box-shadow:
-        0 0 8px #00e5ff,
-        0 0 18px rgba(0,229,255,.7),
-        inset 0 0 8px rgba(0,229,255,.25);
-}
-
-.tags span:hover{
-    background:#00e5ff;
-    color:#000;
-    transform:translateY(-2px) scale(1.05);
-    box-shadow:
-        0 0 12px #00e5ff,
-        0 0 25px #00e5ff,
-        0 0 45px rgba(0,229,255,.9);
-}
-
-.tags span:active{
-    transform:scale(.95);
-}
-
-.tags span.active{
-    background:#00e5ff;
-    color:#000;
-    box-shadow:
-        0 0 15px #00e5ff,
-        0 0 35px #00e5ff,
-        0 0 60px #00e5ff;
-      }
-    .popup{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.75);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:999999;
-}
-
-.popup-box{
-    width:90%;
-    max-width:360px;
-    background:#1b1f26;
-    border:2px solid #00e5ff;
-    border-radius:20px;
-    padding:20px;
-    text-align:center;
-    color:#fff;
-    box-shadow:0 0 30px #00e5ff;
-    animation:popupShow .35s ease;
-}
-
-.popup-img{
-    width:100%;
-    border-radius:15px;
-    margin-bottom:15px;
-}
-
-.popup-btn{
-    display:block;
-    width:100%;
-    padding:12px;
-    margin-top:12px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:bold;
-    border:none;
-    cursor:pointer;
-}
-
-.yt{
-    background:#ff0000;
-    color:#fff;
-}
-
-.close{
-    background:#00e5ff;
-    color:#000;
-}
-
-@keyframes popupShow{
-    from{
-        transform:scale(.8);
-        opacity:0;
-    }
-    to{
-        transform:scale(1);
-        opacity:1;
-    }
-}
   </style>
 </head>
 
@@ -217,413 +88,50 @@
 <div class="wrap">
 
   <div class="head">
-    <img class="avatar" src="https://sf-static.upanhlaylink.com/img/image_2026071985194d39315850fba0a199d13d1eb6ae.jpg">
-    <h2>GẤU MODZ</h2>
-    <p>SHARE MOD SKIN FREE FIRE</p>
+    <img class="avatar" src="https://via.placeholder.com/150">
+    <h2>TÊN</h2>
+    <p>Mô tả</p>
   </div>
-<div class="search-box">
-    <span class="search-icon">🔍</span>
-    <input type="text" id="searchInput"
-           placeholder="Tìm kiếm MOD..."
-           onkeyup="searchMods()">
 
-</div>
-<div class="tags">
-    <span onclick="filterMods('IGNIS')">IGNIS</span>
-<span onclick="filterMods('M1887')">M1887</span>
-<span onclick="filterMods('ALOK')">ALOK</span>
-<span onclick="filterMods('BOM KEO')">BOM KEO</span>
-<span onclick="filterMods('MOD LẺ')">MOD LẺ</span>
-<span onclick="filterMods('TẤT CẢ')">TẤT CẢ</span>
-</div>
-</div>
-<style>
-.search-box{
-    position:relative;
-    width:100%;
-    max-width:420px;
-    margin:25px auto;
-}
+  <div class="grid">
 
-.search-box input{
-    width:100%;
-    height:56px;
-    padding:0 20px 0 55px;
-    background:#0d1117;
-    color:#fff;
-    font-size:17px;
-    border:2px solid #00e5ff;
-    border-radius:40px;
-    outline:none;
-    box-sizing:border-box;
-
-    box-shadow:
-        0 0 8px #00e5ff,
-        0 0 18px #00e5ff,
-        inset 0 0 8px rgba(0,229,255,.25);
-
-    transition:.3s;
-}
-
-.search-box input::placeholder{
-    color:#9adfff;
-}
-
-.search-box input:focus{
-    border-color:#00ffff;
-    box-shadow:
-        0 0 10px #00ffff,
-        0 0 25px #00ffff,
-        0 0 45px #00e5ff,
-        inset 0 0 10px rgba(0,255,255,.3);
-}
-
-.search-icon{
-    position:absolute;
-    left:18px;
-    top:50%;
-    transform:translateY(-50%);
-    color:#00ffff;
-    font-size:22px;
-    text-shadow:
-        0 0 8px #00ffff,
-        0 0 18px #00ffff;
-}
-</style>
-
-<script>
-function searchMods(){
-
-    let keyword=document.getElementById("searchInput").value.toLowerCase();
-
-    let cards=document.querySelectorAll(".card");
-
-    cards.forEach(function(card){
-
-        let text=card.innerText.toLowerCase();
-
-        if(text.includes(keyword)){
-            card.style.display="";
-        }else{
-            card.style.display="none";
-        }
-
-    });
-
-}
-</script> 
-
-  <div class="grid"
-        
-    <div class="card" onclick="openBox('https://link4m.org/TuezWv','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607196aee9a476d67e701ee3a6a96f64fa893.jpg">
-      <h3>MOD SKIN 34</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
+    <div class="card" onclick="openBox('LINK_THUONG','LINK_MAX')">
+      <img src="https://via.placeholder.com/300x170">
+      <h3>MOD 1</h3>
+      <p>Mô tả</p>
     </div>
 
-    <div class="card" onclick="openBox('https://link4m.org/B3RAag','https://link4m.net/T31K3')">
-    <img src="https://sf-static.upanhlaylink.com/img/image_2026071807921386c468f691b753e4ee3defa006.jpg">
-      <h3>MOD SKIN 1</h3>
-      <p>NHÂN VẬT IGNIS</p>
+    <div class="card" onclick="openBox('LINK_THUONG','LINK_MAX')">
+      <img src="https://via.placeholder.com/300x170">
+      <h3>MOD 2</h3>
+      <p>Mô tả</p>
     </div>
 
-    <div class="card" onclick="openBox('https://link4m.org/hHdBvno','https://link4m.net/Xbdzkhb')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719e45fcd1c661def6bc1d161c71612d236.jpg">
-      <h3>MOD SKIN 2</h3>
-      <p>NHÂN VẬT IGNIS</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/17QoaVE','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607192417eeeeb7c785d3fcc584cee29f3cae.jpg">
-      <h3>MOD SKIN 5</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-</div>
-    <div class="card" onclick="openBox('https://link4m.net/St9M1xC','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607191f88522c279a660a18ec4e55952b05e4.jpg">
-      <h3>MOD SKIN CHIM GÕ KIẾN MẢNH HỔ OAI HÙNG</h3>
-      <p>[VŨ KHÍ] PHONG XÀ</p>
-    </div>
-
-<div class="card" onclick="openBox('https://link4m.org/7fMIrmm','https://link4m.net/cxdNc9cb')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_2026071918ed103e4873543ca7ed946dbfd49250.jpg">
-      <h3>MOD SKIN AC80 CUỒNG LONG BẠO KÍCH</h3>
-      <p>[VŨ KHÍ] PHONG XÀ</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/2YYpq','https://link4m.org/WnK562V')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607192f334a4dde213c50cc8f1d1a79a1f455.jpg">
-      <h3>MOD SKIN AK47 KỲ LÂN</h3>
-      <p>[VŨ KHÍ] PHONG XÀ</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/5Lpuf','https://link4m.net/e3Nf6g8')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607193272863f7c949ce295a4e08b8900c1eb.jpg">
-      <h3>MOD SKIN M4A1 ĐỊA NGỤC BÓNG ĐÊM</h3>
-      <p>[VŨ KHÍ] PHONG XÀ</p>
-    </div>
-
-<div class="card" onclick="openBox('https://link4m.org/JFC2sl','https://link4m.org/Os3hF')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719f4fba593c14c08f459a57fd0b64783c2.jpg">
-      <h3>MOD SKIN M4A1 ĐỊA NGỤC ĐỘC DƯỢC</h3>
-      <p>[VŨ KHÍ] PHONG XÀ</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/KWpKHlj8','https://link4m.net/1Pisni')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719925ba280dddd790c89fb75bdc31948f7.jpg">
-      <h3>MOD SKIN M4A1 ĐỊA NGỤC HÀN BĂNG</h3>
-      <p>[VŨ KHÍ] PHONG XÀ</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/I2XqIi5','https://link4m.org/IPHvDjFv')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607193da35ddedbdb023757aba72b6a5c1cd6.jpg">
-      <h3>MOD SKIN M4A1 ĐỊA NGỤC DUNG NHAM</h3>
-      <p>[VŨ KHÍ] PHONG XÀ</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/I0lgA','https://link4m.org/9kgGQ')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607194a2b374625c57fae89806783891c93a0.jpg">
-      <h3>MOD SKIN M4A1 KIM SƯ ĐIỂU</h3>
-      <p>[VŨ KHÍ] PHONG XÀ</p>
-    </div>
-
-<div class="card" onclick="openBox('https://link4m.org/erPMS','https://link4m.net/Tpng6tI')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719ce7bb5cb8140400d44ebac1dbcd86717.jpg">
-      <h3>MOD SKIN M4A1 LAM SƯ ĐIỂU</h3>
-      <p>[VŨ KHÍ] PHONG XÀ</p>
-    </div>
-
-<div class="card" onclick="openBox('https://link4m.net/5OQEBmK','https://link4m.net/7ENIQ')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_2026071936739afd02bed16cff4895b306fe01cf.jpg">
-      <h3>MOD SKIN HỒNG SƯ ĐIỂU</h3>
-      <p>[VŨ KHÍ] PHONG XÀ</p>
-    </div>
-    <div class="card" onclick="openBox('https://link4m.org/ny1IqY','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607191120892b62cc431c6ef53e0217502f03.jpg">
-      <h3>MOD SKIN 32</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/WrFXCt','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_2026071953fc532d83b30131d5e2b2a775a8d615.jpg">
-      <h3>MOD SKIN 33</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-</div>
-    <div class="card" onclick="openBox('https://link4m.net/P6e4L7Tn','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719b140a264c2f17ac97717dedf666d2f16.jpg">
-      <h3>MOD SKIN 3</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-    <div class="card" onclick="openBox('https://link4m.org/wvqs0DHV','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607198dd772781ea553da7f487b0dd41b170e.jpg">
-      <h3>MOD SKIN 22</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/iuzDk','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_2026071987948e546b32c6b05c2394b9a683f6f4.jpg">
-      <h3>MOD SKIN 23</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/oiml3','https://link4m.net/Hxa6X')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719b269ae5dceb78a13368c76be31dfea1a.jpg">
-      <h3>MOD SKIN 24</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/WwuvW','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719169a28c6c746474fc3441a865d31a05b.jpg">
-      <h3>MOD SKIN 25</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/e5beXaJe','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719de41675aa2ceee0b6d4f6675771bfda6.jpg">
-      <h3>MOD SKIN 26</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/kBR5NV','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719addd1817a9de77ac24228c317c6f4449.jpg">
-      <h3>MOD SKIN 27</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/Fi3GNhs','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719ccfa5d443f58445335e587821c9f612a.jpg">
-      <h3>MOD SKIN 28</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/ozEpHUd','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607195601b2223d6d50f770240b2b56f5813c.jpg">
-      <h3>MOD SKIN 29</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/dCa66','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607195f8bb857c2121a7f810a2e5364b32ed5.jpg">
-      <h3>MOD SKIN 30</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/CoaZB','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719287026c7bc9c00210597031df8bc5405.jpg">
-      <h3>MOD SKIN 31</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-</div>
-    <div class="card" onclick="openBox('https://link4m.org/VX6LZeg','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607190898f009c09740d19821ca2b2c1bd49a.jpg">
-      <h3>MOD SKIN 12</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/UfbvZ9','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_2026071979abcb40bbc8f9915548d4c7b7dd02dd.jpg">
-      <h3>MOD SKIN 13</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/CMSOv2','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_2026071976e82088687f679f4b32edef96901c18.jpg">
-      <h3>MOD SKIN 14</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/DinpC','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719ddda2dd4ff2351263a35f4302014ef16.jpg">
-      <h3>MOD SKIN 15</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/KRcxpiJt','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719c037af211df20dcdfd6576e3f324883c.jpg">
-      <h3>MOD SKIN 16</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/hdU9f','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719efea73595f60471075258e46e5c9d85d.jpg">
-      <h3>MOD SKIN 17</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/Ktr537y','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719b500b562489df707de65da511f880362.jpg">
-      <h3>MOD SKIN 18</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/w6qVPT','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607194a0d8d8dba2ae185ed9dbd18fd0aa819.jpg">
-      <h3>MOD SKIN 19</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/iM3WWoA','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_2026071998f8d8ffecad73891d51ec703ec66342.jpg">
-      <h3>MOD SKIN 20</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/BN0XSzPa','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607199b3d5ef961d2d483f9ddc03789d9cd61.jpg">
-      <h3>MOD SKIN 21</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-</div>
-<div class="card" onclick="openBox('https://link4m.org/h1IfHKdQ','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719ba253455f67621ffda22d0c9d3363d77.jpg">
-      <h3>MOD SKIN 6</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/wYNL8Jx','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719b4b25c2b4a9804cc74db300292ce4cf3.jpg">
-      <h3>MOD SKIN 7</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-</div>
-    <div class="card" onclick="openBox('https://link4m.org/ZKZ1QlTp','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607195a1101f2ed632da7be67238255df7d23.jpg">
-      <h3>MOD SKIN 8</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/zez0p','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_2026071934db1d220d47235da3a35ec35b59976b.jpg">
-      <h3>MOD SKIN 9</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.org/7uQPlG','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719c3272d7534235394d6c4a315733cd301.jpg">
-      <h3>MOD SKIN 10</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-    </div>
-<div class="card" onclick="openBox('https://link4m.net/LZG7ic','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719841a1eefb561d8823bf3cc6816182a1f.jpg">
-      <h3>MOD SKIN 11</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-</div>
-    <div class="card" onclick="openBox('https://link4m.org/LyXzRl','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719085fa635173efdc185f31f870b6d7ebc.jpg">
-      <h3>MOD SKIN MẮT TIA CHỚP</h3>
-      <p>[MOD LẺ]MẶT NẠ SINH NHẬT 9 TUỔI</p>
-    </div>
-    
-<div class="card" onclick="openBox('https://link4m.org/r5Bv0KRl','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607191ff72bc57ebc9291d429cb7d7e1a46a8.jpg">
-      <h3>MOD SKIN 4</h3>
-      <p>NHÂN VẬT ALOK THỨC TỈNH</p>
-</div>
-   <div class="card" onclick="openBox('https://link4m.org/UlouN7C','https://link4m.net/ReiP0ly')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719c5742b01d153a2e571a3e7c2bf60b4e6.jpg">
-      <h3>MOD SKIN M4A1 TỬ SƯ ĐIỂU</h3>
-      <p>[VŨ KHÍ] M4A1 PHONG XÀ</p>
-   </div>
-    <div class="card" onclick="openBox('https://link4m.net/C5xCd3AL','https://link4m.net/Yfv9nqA')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719ab1e3a6644cf33e9e3f8ce10a78b4e00.jpg">
-      <h3>MOD AVATAR LUFFY</h3>
-      <p>[AVT] ALOK KELLY MAXIM ANREW</p>
-    </div>
-    
-    <div class="card" onclick="openBox('https://vuotnhanh.com/5fHb','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_2026071953fbcf0653542a447a0a59356fb82ee5.jpg">
-      <h3>MOD KEO SHIBA</h3>
-      <p>KEO GOJO</p>
-    </div>
-    
-    <div class="card" onclick="openBox('https://vuotnhanh.com/2bXX','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607197f97cee8d803475fc54509116f271388.jpg">
-      <h3>MOD ÁO THÍCH KHÁCH THIÊN GIỚI</h3>
-      <p>[MOD LẺ] ÁO ÁNH DƯƠNG</p>
-    </div>
-    <div class="card" onclick="openBox('https://link4m.net/Yxeox7YS','MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719bc5fc7aee03de8a66180c9b53b83edc1.jpg">
-      <h3>MOD SKIN M1887 VŨ TRỤ HỦY DIỆT</h3>
-      <p>[VŨ KHÍ] M1887 PHONG XÀ ÁNH SAO THẦN THOẠI LIỀU LĨNH THỎ SẤM SÉT</p>
-    </div>
-    
-    <div class="card" onclick="openBox('https://vuotnhanh.com/xO9k','https://vuotnhanh.com/Fqpi')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719a870e07ad59dd8d729f467fa5387565b.jpg">
-      <h3>MOD M1887 ONE PUNCH MAN</h3>
-      <p>[VŨ KHÍ] M1887 PHONG XÀ</p>
-    </div>
-    <div class="card" onclick="openBox('https://link4m.org/SwW6FBn','LINK_MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719763605e83a8c5e91696c3180ab8d122c.jpg">
-      <h3>MOD SKIN M1887 LÔI NỘ</h3>
-      <p>[VŨ KHÍ] M1887 PHONG XÀ</p>
-    </div>
-    <div class="card" onclick="openBox('https://link4m.net/cHQOS')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_2026071990e308c9de7952cddf698d98e13521f3.jpg">
-      <h3>MOD SKIN M1887 HOẢ NỘ</h3>
-      <p>[VŨ KHÍ] M1887 PHONG XÀ</p>
-    </div>
-    <div class="card" onclick="openBox('https://link4m.org/NCPWI33S','https://link4m.org/mLR4W')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719605192e7f4886a1af20982a3b7c1abb5.jpg">
-      <h3>MOD SKIN M1887 HY VỌNG</h3>
-      <p>[VŨ KHÍ] M1887 PHONG XÀ</p>
-    </div>
-    <div class="card" onclick="openBox('https://link4m.org/WlB0bF','ffmax')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719c49918521513808c95a6f2eff9c89812.jpg">
-      <h3>MOD SKIN M1887 LỤC BẢO</h3>
-      <p>[VŨ KHÍ] M1887 PHONG XÀ</p>
-    </div>
-    <div class="card" onclick="openBox('https://link4m.org/4pyEeRex','https://link4m.org/KOls6UT')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_20260719a9f1bb65f95cc18fa25cdf63413db3bd.jpg">
-      <h3>MOD SKIN M1887 HÀO QUANG VÀNG</h3>
-      <p>[VŨ KHÍ] M1887 PHONG XÀ</p>
-    </div>
-    <div class="card" onclick="openBox('https://link4m.net/NMsL9I3','MAX')">
-      <img src="https://sf-static.upanhlaylink.com/img/image_202607197c1553c5b75b70e7b28ba426601aa4e0.jpg">
-      <h3>MOD SKIN M1887 THẾ GIỚI NGẦM</h3>
-      <p>[VŨ KHÍ] M1887 PHONG XÀ</p>
+    <div class="card" onclick="openBox('LINK_THUONG','LINK_MAX')">
+      <img src="https://via.placeholder.com/300x170">
+      <h3>MOD 3</h3>
+      <p>Mô tả</p>
     </div>
 
+    <div class="card" onclick="openBox('LINK_THUONG','LINK_MAX')">
+      <img src="https://via.placeholder.com/300x170">
+      <h3>MOD 4</h3>
+      <p>Mô tả</p>
+    </div>
+
+  </div>
 
   <div class="contact">
-  </div>
-        
     <h3>Thông tin liên hệ</h3>
 
-    <a href="https://gaumod.blogspot.com/2026/07/su-dung-zachiver-android-11-httpsyoutu.html">Hướng dẫn</a>
-    <a href="https://youtube.com/@gaumodz?si=flhDHRS5-i9GZosK">YouTube</a>
-    <a href="https://zalo.me/g/aihlh9ecdeiv9fjslrmc">NHÓM ZALO CHAT</a>
-    <a href="https://t.me/+7cYbbhOzVc43MWVl">NHÓM TELEGRAM</a>
-    <a href="https://zalo.me/g/h5ngyygcqrv17h7vsqde">NHÓM ZALO</a>
+    <a href="#">Hướng dẫn</a>
+    <a href="#">YouTube</a>
+    <a href="#">TikTok</a>
+    <a href="#">Telegram</a>
+    <a href="#">Zalo</a>
   </div>
 
+</div>
 
 <div id="pop">
   <div class="box">
@@ -638,275 +146,14 @@ function searchMods(){
 <script>
 function openBox(a,b){
   document.getElementById('pop').style.display='flex';
-  document.getElementById('n').href = a;
-  document.getElementById('m').href = b;
+  n.href=a;
+  m.href=b;
 }
 
 function closeBox(){
-  document.getElementById('pop').style.display='none';
+  pop.style.display='none';
 }
 </script>
-<!-- Nhạc nền -->
-<audio id="bgMusic" loop>
-    <source src="https://gaumodz.github.io/gaumodzgau.github.io/music.mp3" type="audio/mpeg">
-</audio>
 
-<!-- Nút nhạc -->
-<button id="musicBtn">🎵</button>
-
-<style>
-#musicBtn{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    border:2px solid #fff;
-    background:#000;
-    color:#fff;
-    font-size:28px;
-    cursor:pointer;
-    z-index:9999;
-    box-shadow:0 0 8px #fff,0 0 18px #00e5ff;
-    transition:.3s;
-}
-
-#musicBtn:hover{
-    transform:scale(1.1);
-}
-
-#musicBtn.playing{
-    animation:spin 2s linear infinite, glow 1.5s ease-in-out infinite alternate;
-}
-
-@keyframes spin{
-    from{transform:rotate(0deg);}
-    to{transform:rotate(360deg);}
-}
-
-@keyframes glow{
-    from{
-        box-shadow:0 0 8px #fff,0 0 15px #00e5ff;
-    }
-    to{
-        box-shadow:0 0 15px #fff,0 0 35px #00e5ff;
-    }
-}
-</style>
-
-<script>
-const music=document.getElementById("bgMusic");
-const btn=document.getElementById("musicBtn");
-
-let playing=false;
-
-btn.onclick=function(){
-
-    if(!playing){
-
-        music.play();
-
-        btn.classList.add("playing");
-
-        btn.innerHTML="🔊";
-
-        playing=true;
-
-    }else{
-
-        music.pause();
-
-        btn.classList.remove("playing");
-
-        btn.innerHTML="🔇";
-
-        playing=false;
-
-    }
-
-}
-</script>
-  <style>
-.petal{
-    position:fixed;
-    top:-20px;
-    width:16px;
-    height:16px;
-    background:linear-gradient(135deg,#ffd6e7,#ff8fb8);
-    border-radius:70% 0 70% 0;
-    opacity:.9;
-    pointer-events:none;
-    z-index:9999;
-    animation:petalFall linear forwards;
-    box-shadow:0 0 6px rgba(255,182,193,.5);
-}
-
-@keyframes petalFall{
-    0%{
-        transform:translate(0,-20px) rotate(0deg);
-        opacity:0;
-    }
-    10%{
-        opacity:1;
-    }
-    50%{
-        transform:translate(60px,50vh) rotate(360deg);
-    }
-    100%{
-        transform:translate(-80px,110vh) rotate(720deg);
-        opacity:0;
-    }
-}
-</style>
-
-<script>
-function createPetal(){
-    const petal=document.createElement("div");
-    petal.className="petal";
-
-    petal.style.left=Math.random()*window.innerWidth+"px";
-    petal.style.width=(10+Math.random()*12)+"px";
-    petal.style.height=petal.style.width;
-    petal.style.animationDuration=(12+Math.random()*8)+"s";
-
-    document.body.appendChild(petal);
-
-    setTimeout(()=>{
-        petal.remove();
-    },12000);
-}
-
-setInterval(createPetal,1000);
-</script>
-  <style>
-.sakura{
-    position:fixed;
-    left:0;
-    top:0;
-    pointer-events:none;
-    z-index:99999;
-    animation:petal 7s ease-out forwards;
-}
-
-.sakura::before{
-    content:"❄️";
-    font-size:var(--size);
-    display:block;
-}
-
-@keyframes petal{
-
-0%{
-    transform:translate(-50%,-50%) scale(.2) rotate(0deg);
-    opacity:1;
-}
-
-100%{
-    transform:
-        translate(
-            calc(-50% + var(--x)),
-            calc(-50% + var(--y))
-        )
-        rotate(720deg)
-        scale(1);
-    opacity:0;
-}
-
-}
-</style>
-
-<script>
-document.addEventListener("pointerdown",function(e){
-
-    const petals = 5;
-    const radius = 20;
-
-    for(let i=0;i<petals;i++){
-
-        const flower = document.createElement("div");
-        flower.className = "sakura";
-
-        flower.style.left = e.clientX + "px";
-        flower.style.top = e.clientY + "px";
-
-        const angle = (Math.PI * 2 / petals) * i;
-
-        const random = Math.random() * 40;
-
-        const x = Math.cos(angle) * (radius + random);
-        const y = Math.sin(angle) * (radius + random);
-
-        flower.style.setProperty("--x",x + "px");
-        flower.style.setProperty("--y",y + "px");
-        flower.style.setProperty("--size",(10 + Math.random()*8) + "px");
-
-        document.body.appendChild(flower);
-
-        setTimeout(()=>{
-            flower.remove();
-        },1800);
-
-    }
-
-});
-</script>
-  <script>
-function filterMods(keyword){
-
-    let cards = document.querySelectorAll(".card");
-    let tags = document.querySelectorAll(".tags span");
-
-    tags.forEach(tag => tag.classList.remove("active"));
-
-    event.target.classList.add("active");
-
-    cards.forEach(card=>{
-
-        let text = card.innerText.toUpperCase();
-
-        if(keyword==="TẤT CẢ"){
-            card.style.display="";
-        }else if(text.includes(keyword.toUpperCase())){
-            card.style.display="";
-        }else{
-            card.style.display="none";
-        }
-
-    });
-
-}
-  </script>
-  <div id="popup" class="popup">
-  <div class="popup-box">
-
-    <img src="https://sf-static.upanhlaylink.com/img/image_20260719fcb1e5cd8039727ab76263a650148cb5.jpg" class="popup-img">
-
-    <h2>📢 GẤU MODZ</h2>
-
-    <p>
-      Chào mừng bạn đến với website GẤU MODZ mod mới sẽ xuất hiện ở đầu nhé.<br>
-      Hãy đăng ký kênh YouTube để ủng hộ mình nhé ❤️
-    </p>
-
-    <a href="https://youtube.com/@gaumodz?si=DFOPA9xa5gYY4L0u" target="_blank" class="popup-btn yt">
-      ▶ Đăng ký YouTube
-    </a>
-
-    <button class="popup-btn close" onclick="closePopup()">
-      ❌ Đóng thông báo
-    </button>
-
-
-  </div>
-  <script>
-window.addEventListener("load", function(){
-    document.getElementById("popup").style.display="flex";
-});
-
-function closePopup(){
-    document.getElementById("popup").style.display="none";
-}
-  </script>
 </body>
-        </html>
+</html>
