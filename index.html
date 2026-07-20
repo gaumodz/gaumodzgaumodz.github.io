@@ -53,33 +53,7 @@
       border-radius:10px;
     }
 
-    .contact a,
-    .btn{
-      display:block;
-      background:#20242b;
-      color:#fff;
-      text-decoration:none;
-      padding:12px;
-      border-radius:10px;
-      margin:8px 0;
-    }
-
-    #pop{
-      display:none;
-      position:fixed;
-      inset:0;
-      background:#0008;
-      align-items:center;
-      justify-content:center;
-    }
-
-    .box{
-      background:#1b1f26;
-      padding:20px;
-      border-radius:16px;
-      width:85%;
-      max-width:320px;
-    }
+    .contact a{display:block;background:#20242b;color:#fff;text-decoration:none;padding:12px;border-radius:10px;margin:8px 0;}#pop{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);justify-content:center;align-items:center;z-index:99999}.popup-box{position:relative;width:90%;max-width:370px;background:#171b22;border-radius:25px;padding:25px;text-align:center;overflow:hidden;box-shadow:0 0 20px #00e5ff,0 0 45px #00e5ff}.popup-box::before{content:"";position:absolute;inset:-2px;border-radius:25px;background:linear-gradient(90deg,#00e5ff,#00ff88,#00e5ff,#00aaff,#00e5ff);background-size:400%;animation:borderRun 6s linear infinite;filter:blur(2px);z-index:-2}.popup-box::after{content:"";position:absolute;inset:3px;background:#171b22;border-radius:22px;z-index:-1}.btn{display:block;padding:18px;margin:15px 0;border-radius:18px;text-decoration:none;color:#fff;font-weight:bold}.green{background:#00d84a}.red{background:#ff3030}.close-btn{position:absolute;top:12px;right:12px;width:42px;height:42px;border:none;border-radius:50%;background:#ff2f2f;color:#fff}@keyframes borderRun{0%{background-position:0}100%{background-position:400%}}
   </style>
 </head>
 
@@ -133,15 +107,7 @@
 
 </div>
 
-<div id="pop">
-  <div class="box">
-    <h3>Chọn phiên bản</h3>
-
-    <a class="btn" id="n">🟢 Free Fire Thường</a>
-    <a class="btn" id="m">🔴 Free Fire MAX</a>
-    <a class="btn" href="javascript:closeBox()">❌ Đóng</a>
-  </div>
-</div>
+<div id="pop"><div class="popup-box"><button class="close-btn" onclick="closeBox()">✖</button><h2>📢 VUI LÒNG CHỌN PHIÊN BẢN</h2><a class="btn green" id="n">🟢 FREE FIRE THƯỜNG</a><a class="btn red" id="m">🔴 FREE FIRE MAX</a></div></div>
 
 <script>
 function openBox(a,b){
